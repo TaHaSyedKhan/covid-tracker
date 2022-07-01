@@ -1,0 +1,39 @@
+
+.card {
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    gap: 60px;
+    padding: 20px, auto; 
+}
+
+.infected {
+    background-color: whitesmoke;
+    border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+    background-color: whitesmoke;
+    border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths {
+    background-color: whitesmoke;
+    border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 980px) {
+    .card {
+        display: grid;
+        grid-template-columns: repeat( 2, 1fr);
+        gap: 50px;
+        padding: 20px, auto; 
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .card {
+        display: block;
+        margin: 0 20px;
+    }
+}
+
