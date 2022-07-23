@@ -2,7 +2,7 @@ import styles from './Cards.module.css';
 import CountUp from 'react-countup';
 
     const Card = ({ data: { confirmed, recovered, deaths, lastUpdate}}) => {
-        console.log(recovered);
+    
     if(!confirmed){
         return 'loading...'
     }
